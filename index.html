@@ -69,14 +69,18 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-lg-flex ms-lg-3">
-                        <button class="btn btn-outline-danger me-2 px-4 py-2 mb-2 mb-lg-0"
-                            style="color: white; border-color: red; background-color: transparent;">
-                            LOGIN
-                        </button>
-                        <button class="btn px-4 py-2"
-                            style="background-color: rgb(241, 10, 10); color: white; border: none;">
-                            REGISTER
-                        </button>
+                        <button class="btn btn-outline-danger me-2 px-4 py-2 " class="login-btn"
+                        style="background-color: rgb(241, 10, 10); color: white; border: none;"
+                        onmouseover="this.style.backgroundColor='transparent'; this.style.border='1px solid red'"
+                        onmouseout="this.style.backgroundColor=' rgb(241, 10, 10)'">
+                        LOGIN
+                    </button>
+                    <button class="btn px-4 py-2"
+                        style="background-color: transparent; color: white; border: 1px solid red;"
+                        onmouseover="this.style.backgroundColor='rgb(241, 10, 10)'"
+                        onmouseout="this.style.backgroundColor=' transparent'; this.style.border='1px solid red'">
+                        REGISTER
+                    </button>
                     </div>
                 </div>
             </nav>
