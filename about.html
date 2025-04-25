@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Fit MeasureAI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" style="background-color: black; padding: 0;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img src="Logo/ai body-logo.png" alt="Fit Measure AI">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="feature.html" class="nav-item nav-link">Features</a>
+                        <a href="Resources.html" class="nav-item nav-link"> Resources </a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-lg-flex ms-lg-3">
+                        <button class="btn btn-outline-danger me-2 px-4 py-2 mb-2 mb-lg-0"
+                            style="color: white; border-color: red; background-color: transparent;">
+                            LOGIN
+                        </button>
+                        <button class="btn px-4 py-2"
+                            style="background-color: rgb(241, 10, 10); color: white; border: none;">
+                            REGISTER
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header ">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h5 class="display-4 text-white mb-4 animated slideInRight">
+                        About Fit Measure
+                    </h5>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <!-- Remove this img tag if not needed -->
+                    <img class="img-fluid d-none" src="img/hero-img.jpg" alt="Fit Measure AI"
+                        style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow  " data-wow-delay="0.1s">
+                    <div class="aboutImg">
+                        <img class="img-fluid aboutImg-img" src="img/Frame 1171275347 (1).png" alt="About Us Image">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow  " data-wow-delay="0.5s">
+                    <div class="btn btn-sm border about-button rounded-pill text-primary px-3 mb-3">About Us</div>
+
+                    <h1 class="mb-4">Transforming Online Shopping, One Measurement at a Time</h1>
+                    <p class="mb-4">Our mission is to revolutionize the e-commerce landscape by providing precise body
+                        measurements and personalized size recommendations. We strive to enhance customer satisfaction,
+                        reduce returns, and promote sustainable shopping practices.</p>
+                    <p class="mb-4">Breaking Barriers in Healthcare: Harnessing Innovative Technologies for Enhanced
+                        Monitoring of Medical Conditions.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3">
+                                <i class="fa fa-check me-2" style="color: red;"></i>24/7 Support
+                            </h6>
+                            <h6 class="mb-0">
+                                <i class="fa fa-check me-2" style="color: red;"></i>Fair Prices
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn rounded-pill px-4 me-3" href="about.html"
+                            style="background-color: red; color: white; border: none;">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow  " data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3 about-button">Popular FAQs</div>
+                <h1 class="mb-4 hh">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow  " data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How does Fit Measure AI ensure accurate body measurements?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Fit Measure AI uses advanced AI algorithms and computer vision technology to analyze
+                                    your
+                                    body measurements through a simple photo capture process, ensuring precision and
+                                    accuracy tailored to your unique body shape.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow  " data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Is my data secure when using Fit Measure AI?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Yes, Fit Measure AI prioritizes your privacy and data security. All personal data is
+                                    encrypted and stored securely, complying with industry standards to protect your
+                                    information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow  " data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I take my body measurements with Fit Measure AI?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Simply follow the guided steps on our app or website to take a full-body photo. Our
+                                    AI
+                                    will analyze the image to provide you with accurate measurements in just a few
+                                    seconds.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow  " data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    What makes Fit Measure AI different from other sizing tools?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Unlike other sizing tools, Fit Measure AI uses cutting-edge technology to provide
+                                    highly personalized and accurate measurements, reducing the chances of ordering the
+                                    wrong
+                                    size and minimizing returns.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow  " data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can I use Fit Measure AI on multiple devices?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, Fit Measure AI is accessible on multiple devices, including smartphones,
+                                    tablets,
+                                    and desktops, allowing you to take measurements wherever and whenever you need.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow  " data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Do I need any special equipment to use Fit Measure AI?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    No special equipment is needed. All you need is a camera-equipped device such as a
+                                    smartphone or tablet to take your measurements with Fit Measure AI.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow  " data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Is Fit Measure AI compatible with all clothing brands?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Fit Measure AI works with a wide range of clothing brands. Our technology adapts to
+                                    various size charts, ensuring that you receive accurate recommendations no matter
+                                    where
+                                    you shop.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+
+
+
+
+
+    <!-- Subscribe & Stay Updated Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 text-center text-md-start wow  " data-wow-delay="0.3s">
+                    <h1 class="mb-4">Stay Ahead with Fit Measure AI Updates</h1>
+                    <p class="mb-4">Be the first to know about our latest features, updates, and special offers.
+                        Subscribe to our newsletter for exclusive insights and tips on how to get the best fit for your
+                        clothes with our advanced AI technology.</p>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-muted">Receive the latest news, updates, and special offers directly in your
+                        inbox.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end wow  " data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/main-min.jpg" alt="Stay Updated with Fit Measure AI">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe & Stay Updated End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer Footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.1s">
+
+                    <a href="index.html" class="navbar-brand ">
+                        <img class="mb-3" src="Logo/ai body-logo.png" alt="">
+                    </a>
+                    <p class="mb-3"> Nam Posuere accumsan porta. Integer id orci sed ante tincidunt tincidunt sit amet
+                        sed libero </p>
+                    <p class="mb-0"> &#169; Fit Measure AL</p>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4"> Resources </h5>
+                    <a class="btn btn-link" href="">Suspendisse porttitor </a>
+                    <a class="btn btn-link" href=""> Nam Posurere</a>
+                    <a class="btn btn-link" href=""> Curabitur Egestas</a>
+
+
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">FEATURES</h5>
+                    <a class="btn btn-link" href="">Cras convalis </a>
+                    <a class="btn btn-link" href="">Vestibulum Facucibus</a>
+                    <a class="btn btn-link" href="">Quisque Lacinia purus</a>
+                    <a class="btn btn-link" href="">Aliquam nec ex</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4"> COMPANY</h5>
+                    <a class="btn btn-link" href="">Donec dignissim</a>
+                    <a class="btn btn-link" href="">Curabitur egestas</a>
+                    <a class="btn btn-link" href="">Nam posuere</a>
+                    <a class="btn btn-link" href="">Aenean Facillisis</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-1" style="background-color: #dc3545; color: white;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

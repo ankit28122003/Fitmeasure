@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Fit MeasureAI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" style="background-color: black; padding: 0;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img src="Logo/ai body-logo.png" alt="Fit Measure AI">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="feature.html" class="nav-item nav-link">Features</a>
+                        <a href="Resources.html" class="nav-item nav-link"> Resources </a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-lg-flex ms-lg-3">
+                        <button class="btn btn-outline-danger me-2 px-4 py-2 mb-2 mb-lg-0"
+                            style="color: white; border-color: red; background-color: transparent;">
+                            LOGIN
+                        </button>
+                        <button class="btn px-4 py-2"
+                            style="background-color: rgb(241, 10, 10); color: white; border: none;">
+                            REGISTER
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Our Services</h1>
+                    <p class="text-white mb-4">At Fit Measure AI, we offer a range of cutting-edge services designed to
+                        enhance your online shopping experience. Our AI-driven technology provides precise body
+                        measurements and personalized size recommendations, ensuring a perfect fit every time.</p>
+                    <p class="text-white mb-4">Explore our services to find out how we can help you optimize your
+                        clothing purchases and reduce returns. Our commitment to accuracy and customer satisfaction sets
+                        us apart in the industry.</p>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/hero-img.png" alt="Fit Measure AI Services"
+                        style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Our Services Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center wow  " data-wow-delay="0.1s">
+                <h1 class="mb-5">Our Precision Measurement Services</h1>
+                <p class="mb-4">Discover our range of services designed to provide you with accurate body measurements
+                    and personalized size recommendations, ensuring a perfect fit every time.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow  Up" data-wow-delay="0.2s">
+                    <div class="service-item text-center bg-white p-4 rounded shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fa fa-camera fa-2x" style="color: red;"></i>
+                        </div>
+                        <h4 class="mb-3">Advanced Image Analysis</h4>
+                        <p>Utilizing state-of-the-art image recognition technology, we capture detailed body dimensions
+                            from just a single photo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow  Up" data-wow-delay="0.4s">
+                    <div class="service-item text-center bg-white p-4 rounded shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fa fa-ruler-vertical fa-2x" style="color: red;"></i>
+                        </div>
+                        <h4 class="mb-3">Precise Body Measurements</h4>
+                        <p>Our AI algorithms analyze your body shape and size to provide accurate measurements, ensuring
+                            your clothing fits perfectly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow  Up" data-wow-delay="0.6s">
+                    <div class="service-item text-center bg-white p-4 rounded shadow-sm">
+                        <div class="service-icon mb-3">
+                            <i class="fa fa-thumbs-up fa-2x" style="color: red;"></i>
+                        </div>
+                        <h4 class="mb-3">Personalized Size Recommendations</h4>
+                        <p>Receive customized size suggestions based on your measurements, making online shopping easy
+                            and hassle-free.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services End -->
+
+
+
+    <!-- Service Start -->
+    <div class="container-fluid mt-5 py-5" style="background-color: rgb(242, 241, 246);">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow  " data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3 about-button">Our Services</div>
+                    <h1 class="mb-4 text-black hh">Innovative AI-Driven Solutions for Your Needs</h1>
+                    <p class="mb-4">We offer cutting-edge AI services designed to streamline your business operations,
+                        enhance decision-making, and drive growth. Our solutions are tailored to meet the unique
+                        challenges of your industry, ensuring you stay ahead of the competition.</p>
+                    <a class="btn btn-primary rounded-pill px-4"
+                        style="background-color: red; color: white; border: none;" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow  " data-wow-delay="0.1s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-cogs fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">AI-Powered Automation</h5>
+                                        <p>Leverage AI to automate repetitive tasks, reduce errors, and enhance
+                                            productivity, allowing your team to focus on strategic initiatives.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow  " data-wow-delay="0.5s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-chart-line fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Data Analytics & Insights</h5>
+                                        <p>Transform raw data into actionable insights with our advanced analytics
+                                            services, driving informed decision-making and business growth.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow  " data-wow-delay="0.3s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-laptop-code fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Custom AI Development</h5>
+                                        <p>Develop tailored AI solutions that address your specific business needs, from
+                                            intelligent chatbots to predictive modeling.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow  " data-wow-delay="0.7s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <i class="fa fa-cloud fa-2x"></i>
+                                        </div>
+                                        <h5 class="mb-3">Cloud AI Integration</h5>
+                                        <p>Seamlessly integrate AI solutions with your existing cloud infrastructure to
+                                            enhance scalability, security, and performance.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer Footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.1s">
+
+                    <a href="index.html" class="navbar-brand ">
+                        <img class="mb-3" src="Logo/ai body-logo.png" alt="">
+                    </a>
+                    <p class="mb-3"> Nam Posuere accumsan porta. Integer id orci sed ante tincidunt tincidunt sit amet
+                        sed libero </p>
+                    <p class="mb-0"> &#169; Fit Measure AL</p>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4"> Resources </h5>
+                    <a class="btn btn-link" href="">Suspendisse porttitor </a>
+                    <a class="btn btn-link" href=""> Nam Posurere</a>
+                    <a class="btn btn-link" href=""> Curabitur Egestas</a>
+
+
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">FEATURES</h5>
+                    <a class="btn btn-link" href="">Cras convalis </a>
+                    <a class="btn btn-link" href="">Vestibulum Facucibus</a>
+                    <a class="btn btn-link" href="">Quisque Lacinia purus</a>
+                    <a class="btn btn-link" href="">Aliquam nec ex</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow  " data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4"> COMPANY</h5>
+                    <a class="btn btn-link" href="">Donec dignissim</a>
+                    <a class="btn btn-link" href="">Curabitur egestas</a>
+                    <a class="btn btn-link" href="">Nam posuere</a>
+                    <a class="btn btn-link" href="">Aenean Facillisis</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-1" style="background-color: #dc3545; color: white;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
