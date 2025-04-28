@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Image/Video - FitMeasure AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white shadow-xl rounded-lg p-8 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-6">Upload Your Image or Video</h1>
+
+    <div id="drop-area" class="flex flex-col items-center justify-center border-2 border-dashed border-blue-400 rounded-lg p-6 mb-4 cursor-pointer bg-blue-50 hover:bg-blue-100 transition">
+      <p class="text-gray-600 mb-2">Drag & Drop files here</p>
+      <p class="text-gray-500 text-sm">or click to select</p>
+      <input type="file" id="fileElem" accept=".jpg, .jpeg, .png, .mp4" class="hidden" onchange="handleFiles(this.files)">
+    </div>
+
+    <div id="preview" class="mt-4 text-center"></div>
+
+    <button onclick="uploadFile()" class="mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+      Upload
+    </button>
+  </div>
+
+  <script>
+    const dropArea = document.getElementById('drop-area');
+    const fileInput = document.getElementById('fileElem');
+    const preview = document.getElementById('preview');
+    let uploadedFile = null;
+
+    dropArea.addEventListener('click', () => fileInput.click());
+
+    dropArea.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropArea.classList.add('bg-blue-100');
+    });
+
+    dropArea.addEventListener('dragleave', (e) => {
+      e.preventDefault();
+      dropArea.classList.remove('bg-blue-100');
+    });
+
+    dropArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropArea.classList.remove('bg-blue-100');
+      handleFiles(e.dataTransfer.files);
+    });
+
+    function handleFiles(files) {
+      const file = files[0];
+      if (!file) return;
+
+      const validTypes = ['image/jpeg', 'image/png', 'video/mp4'];
+      if (!validTypes.includes(file.type)) {
+        alert('Only JPG, PNG, and MP4 files are allowed.');
+        return;
+      }
+
+      if (file.size > 50 * 1024 * 1024) { // 50MB size limit
+        alert('File size must be under 50MB.');
+        return;
+      }
+
+      uploadedFile = file;
+      preview.innerHTML = '';
+
+      if (file.type.startsWith('image/')) {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        img.className = 'mt-4 mx-auto max-h-64 rounded';
+        preview.appendChild(img);
+      } else if (file.type === 'video/mp4') {
+        const video = document.createElement('video');
+        video.src = URL.createObjectURL(file);
+        video.className = 'mt-4 mx-auto max-h-64 rounded';
+        video.controls = true;
+        preview.appendChild(video);
+      }
+    }
+
+    function uploadFile() {
+      if (!uploadedFile) {
+        alert('Please select a file first.');
+        return;
+      }
+      alert('File ready to upload: ' + uploadedFile.name);
+      // Here you would normally upload to the server using Fetch/AJAX
+    }
+  </script>
+
+</body>
+</html>
